@@ -1,1 +1,1 @@
-web : gunicorn IyantraCustomerPortal.wsgi --log-file -
+web : gunicorn IyantraCustomerPortal.wsgi 
