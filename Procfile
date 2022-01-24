@@ -1,1 +1,1 @@
-web : gunicorn IyantraCustomerPortal.wsgi 
+web : gunicorn IyantraCustomerPortal:IyantraCustomerPortal
