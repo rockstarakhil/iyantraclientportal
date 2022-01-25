@@ -4,7 +4,7 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return render(request,'DataCollection/home.html')
+    return render(request,'DataCollection/home.html', name = '')
 
 def about(request):
     return render(request,'DataCollection/about.html')
