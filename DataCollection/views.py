@@ -4,7 +4,7 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return HttpResponse("<h1>Welcome To Iyantra Client Portal<h1>")
+    return render(request,'DataCollection/home.html')
 
 #def about(request):
  #   return render(request,'DataCollection/about.html')
