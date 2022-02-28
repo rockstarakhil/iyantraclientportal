@@ -11,7 +11,6 @@ class PlantModel(models.Model):
 
     def __str__(self): 
         return self.planttype
-
 class Client(models.Model):
 
     FirstName = models.CharField(max_length=200)
@@ -21,8 +20,6 @@ class Client(models.Model):
 
     def __str__(self):
         return self.FirstName 
-
-
 class Plant_Details(models.Model):
     plantname = models.CharField(max_length=200)
     Client = models.ForeignKey(Client,on_delete=models.CASCADE)
