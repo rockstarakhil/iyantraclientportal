@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-l$_ycpchudtbf5yc6j#oimnbzi+nmw28a-bd047j9wts%-dr+f
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['iyantra-client-portal.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -86,22 +86,6 @@ DATABASES = {
     }
 }
 
-
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'handlers': {
-        'console': {
-            'class': 'logging.StreamHandler',
-        },
-    },
-    'loggers': {
-        'django': {
-            'handlers': ['console'],
-             'level': os.getenv('DJANGO_LOG_LEVEL', 'DEBUG'),
-        },
-    },
-}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
