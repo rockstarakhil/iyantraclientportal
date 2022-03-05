@@ -1,4 +1,6 @@
+from tokenize import Number
 from django.db import models
+
 
 class Common_Problems(models.Model):
     Compliant_Type = models.CharField(max_length=600)
@@ -30,6 +32,13 @@ class Plant_Details(models.Model):
 
     def __str__(self):
         return self.plantname
+
+class created_blocks(models.Model):
+    block = models.IntegerField()
+    plant_name = models.ForeignKey(Plant_Details,on_delete=models.CASCADE)
+
+    def __int__(self):
+        return self.block
 
 class Compliants(models.Model):
     Client = models.ForeignKey(Client,on_delete=models.CASCADE)
