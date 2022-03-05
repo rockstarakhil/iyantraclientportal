@@ -57,6 +57,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'IyantraCustomerPortal.urls'
 os.path.join(os.path.dirname(__file__) ,'../templates').replace('\\','/')
+TEMPLATE_DIRS = (
+    'os.path.join(BASE_DIR, "templates"),'
+)
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
