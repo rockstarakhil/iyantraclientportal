@@ -4,7 +4,7 @@ from . models import *
 
 def home(request):
     clients = Client.objects.all()
-    return render(request,'DataCollection/home.html',{'clients':clients})
+    return render(request,'DataCollection/Home.html',{'clients':clients})
 
-#def about(request):
- #   return render(request,'DataCollection/about.html')
+def about(request):
+    return render(request,'DataCollection/about.html')
