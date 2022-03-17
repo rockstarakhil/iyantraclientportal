@@ -33,13 +33,11 @@ class Plant_Details(models.Model):
     def __str__(self):
         return self.plantname
 
+
 class created_blocks(models.Model):
     block = models.IntegerField()
     plant_name = models.ForeignKey(Plant_Details,on_delete=models.CASCADE)
-
-    def __int__(self):
-        return self.block
-
+       
 class Compliants(models.Model):
     Client = models.ForeignKey(Client,on_delete=models.CASCADE)
     plant = models.ForeignKey(Plant_Details,on_delete=models.CASCADE)
@@ -48,3 +46,4 @@ class Compliants(models.Model):
 
     def __str__(self):
         return self.Problem_Description
+
